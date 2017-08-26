@@ -58,7 +58,8 @@ AGPL-3
 
 ## Other resources:
 ##### Medium post showing all commits and Version-wise release notes:
-
+https://medium.com/@rakeshnchinta/google-summer-of-code-2017-internet-archive-release-s-report-98074a8a166
 ##### Medium post/blog:
+https://medium.com/@rakeshnchinta/et-google-summer-of-code-2017-report-f84fa1b7a294
 
 

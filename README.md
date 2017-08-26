@@ -27,10 +27,10 @@ Alexa and whois Statistics buttons parse the URL for the main part/root part and
 The display notifications of the auto-save features are explained as in 3 cases:
 displays to the user in 4 different modes based on the progress or current status or the URL.     
 ### Modes:  
-Mode1: Displays "CHECKING", which indicates that the current URL is being checked whether if it was already archived in the wayback-machine, it then proceeds to the next steps  
-Mode2: shows a green signal stating "YES" if the webpage is already archived in the wayback machine.
-Mode3: shows "NO", meaning the current webpage is not archived in the wayback machine. 
-Mode4: If "NO", then "SAVING" is shown indicating that the webpage is currently being archived and we get a final message of "YES"
+#### Mode1: Displays "CHECKING", which indicates that the current URL is being checked whether if it was already archived in the wayback-machine, it then proceeds to the next steps  
+#### Mode2: shows a green signal stating "YES" if the webpage is already archived in the wayback machine.
+#### Mode3: shows "NO", meaning the current webpage is not archived in the wayback machine. 
+#### Mode4: If "NO", then "SAVING" is shown indicating that the webpage is currently being archived and we get a final message of "YES"
 
 ## Other Feature which were not merged due to being not required/unnecessary.
 1. Dark Mode button
@@ -55,3 +55,10 @@ AGPL-3
 - Anton, @
 - Abhidhas, @abhidas17695
 - Rakesh N Chinta, @rakesh-chinta
+
+## Other resources:
+##### Medium post showing all commits and Version-wise release notes:
+
+##### Medium post/blog:
+
+

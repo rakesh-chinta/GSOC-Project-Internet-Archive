@@ -32,6 +32,8 @@ displays to the user in 4 different modes based on the progress or current statu
 #### Mode3: shows "NO", meaning the current webpage is not archived in the wayback machine. 
 #### Mode4: If "NO", then "SAVING" is shown indicating that the webpage is currently being archived and we get a final message of "YES"
 
+The final chrome extension built in GSOC was the combination of the advanced features built by @abhidas and I, on the base of the Internet Archive's chrome extension version 1.3.2, which was built by several contributors, given below.
+
 ## Other Feature which were not merged due to being not required/unnecessary.
 1. Dark Mode button
 2. Related Website Feature

@@ -43,11 +43,9 @@ The final chrome extension built in GSOC was the combination of the advanced fea
 6. Quick Calender View
 
 ### Things left to do/complete
-1.Williams feedback:
-"something minor, but on windows the popups created by the chrome extension appear as small black icons in my task-bar that aren't visible when not selected, can this icon be changed to something more compatible?"
-2. Mark's feedback for the "URL selected via Search should be the URL of the page"
-3.Testing in more sites for issue no 35(This is the last issue within the bug sheet which needs to be fixed), regarding "Pages blocked with a robot.txt displays null when trying to find a page saved in the wayback machine, whois, or alexa". I need to do more testing and fix the issue and makes sure it is not failing in any case.
-4.Porting the chrome extension into the safari extension.
+1) Fix icons for Windows tabs
+
+2) Add UI for URLs blocked by robots.txt policy (Recent, First, Whois, Alexa)
 
 
 ## License

@@ -350,8 +350,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
  */
 chrome.webRequest.onCompleted.addListener(function(details) {
     function tabIsReady(isIncognito) {
-        var httpFailCodes = [404, 408, 410, 451, 500, 502, 503, 504,
-                            509, 520, 521, 523, 524, 525, 526];
+        var httpFailCodes = [404, 408, 410, 451, 500, 502, 503, 504, 509, 520, 521, 523, 524, 525, 526];                        
 
         if (isIncognito === false &&
             details.frameId === 0 &&

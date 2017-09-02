@@ -330,6 +330,7 @@ function rewriteUserAgentHeader(e) {
   for (var header of e.requestHeaders) {
     if (header.name.toLowerCase() === "user-agent") {
       header.value = header.value  + " Wayback_Machine_Chrome/" + VERSION
+      console.log(header);
     }
   }
   return {requestHeaders: e.requestHeaders};
@@ -356,7 +357,11 @@ chrome.webRequest.onCompleted.addListener(function(details) {
             details.frameId === 0 &&
             httpFailCodes.indexOf(details.statusCode) >= 0 &&
             isValidUrl(details.url)) {
+             
+
         wmAvailabilityCheck(details.url, function(wayback_url, url) {
+           console.log("A http failed code status has occured");
+
             chrome.tabs.executeScript(details.tabId, {
                 file: "scripts/client.js"
                 // file: "public/scripts/client..min.js"
@@ -722,6 +727,8 @@ chrome.webRequest.onCompleted.addListener(function(details) {
     tabIsReady(tab.incognito);
   });
 }, {urls: ["<all_urls>"], types: ["main_frame"]});
+
+
 
 /**
  * Checks Wayback Machine API for url snapshot

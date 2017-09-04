@@ -329,7 +329,7 @@ function isValidUrl(url) {
 function rewriteUserAgentHeader(e) {
   for (var header of e.requestHeaders) {
     if (header.name.toLowerCase() === "user-agent") {
-      header.value = header.value  + " Wayback_Machine_Chrome/" + VERSION
+      header.value = header.value  + " Wayback_Machine_Chrome/" + VERSION + "Status-code/" + Finalstatuscode;
       console.log(header);
     }
   }
@@ -358,9 +358,10 @@ chrome.webRequest.onCompleted.addListener(function(details) {
             httpFailCodes.indexOf(details.statusCode) >= 0 &&
             isValidUrl(details.url)) {
              
+              Finalstatuscode = details.statusCode;
 
         wmAvailabilityCheck(details.url, function(wayback_url, url) {
-           console.log("A http failed code status has occured");
+         
 
             chrome.tabs.executeScript(details.tabId, {
                 file: "scripts/client.js"
@@ -679,7 +680,7 @@ function isValidUrl(url) {
  * Copyright 2016, Internet Archive
  */
 var VERSION = "1.8.1";
-
+Finalstatuscode = "";
 var excluded_urls = [
   
   "www.google.co",
@@ -979,4 +980,3 @@ function auto_save(tabId){
 //        }
     });
  });
-
